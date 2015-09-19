@@ -19,7 +19,7 @@ if(!lock.available())
 var pointer = lock(my_element)
 
 pointer.on('attain', function(movements) {
-  var initial = {x: movements.x, y: movements: y}
+  var initial = {x: movements.x, y: movements.y}
 
   // movements is a readable stream
   movements.on('data', function(move) {
